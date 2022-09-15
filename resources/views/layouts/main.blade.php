@@ -39,7 +39,7 @@
 						<div
 								class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
 								id="nav-content">
-								<ul class="list-reset lg:flex justify-end flex-1 items-center">
+								<ul class="list-reset lg:flex justify-end flex-1 items-center invisible">
 										<li class="mr-3">
 												<a class="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Active</a>
 										</li>
@@ -52,10 +52,21 @@
 														href="#">link</a>
 										</li>
 								</ul>
-								<button id="navAction"
-										class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-										Action
-								</button>
+								@auth
+										<a href="{{ url('/dashboard') }}" id="navAction"
+												class="hover:underline bg-white text-gray-800 font-bold rounded mt-4 py-2.5 px-4 opacity-75 focus:outline-none transform transition hover:scale-105 duration-300 ease-in-out">
+												Dashboard</a>
+								@endauth
+								@guest
+										<div class="auth">
+												<a href="{{ url('/register') }}" id="navAction"
+														class="hover:underline bg-white text-gray-800 font-bold rounded mt-4 py-2.5 px-4 mx-1 opacity-75 focus:outline-none transform transition hover:scale-105 duration-300 ease-in-out">
+														Register</a>
+												<a href="{{ url('/login') }} "id="navAction"
+														class="hover:underline bg-white text-gray-800 font-bold rounded mt-4 py-2.5 px-4 mx-1 opacity-75 focus:outline-none transform transition hover:scale-105 duration-300 ease-in-out">
+														Login</a>
+										</div>
+								@endguest
 						</div>
 				</div>
 				<hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
@@ -76,7 +87,7 @@
 														<path class="plane-take-off"
 																d=" M 510.7 189.151 C 505.271 168.95 484.565 156.956 464.365 162.385 L 330.156 198.367 L 155.924 35.878 L 107.19 49.008 L 211.729 230.183 L 86.232 263.767 L 36.614 224.754 L 0 234.603 L 45.957 314.27 L 65.274 347.727 L 105.802 336.869 L 240.011 300.886 L 349.726 271.469 L 483.935 235.486 C 504.134 230.057 516.129 209.352 510.7 189.151 Z " />
 												</svg>
-												LANDING
+												Zoo Animals
 										</a>
 								</div>
 								<div class="flex-1">

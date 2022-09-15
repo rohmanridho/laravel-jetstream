@@ -19,7 +19,8 @@
 						<!--Right Col-->
 						<div class="w-full md:w-3/5 py-6 text-center">
 								<!-- <img class="w-full md:w-4/5 z-50" src="hero.png" /> -->
-								<lottie-player src="https://assets7.lottiefiles.com/packages/lf20_qxppoequ.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+								<lottie-player src="https://assets7.lottiefiles.com/packages/lf20_qxppoequ.json" background="transparent"
+										speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
 						</div>
 				</div>
 		</div>
@@ -311,12 +312,13 @@
 		<section class="bg-white border-b py-8">
 				<div class="container mx-auto flex flex-wrap pt-4 pb-12">
 						<h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-								Title
+								Animals
 						</h2>
+						<div class="w-full text-right text-6xl text-blue-500">helo</div>
 						<div class="w-full mb-4">
 								<div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
 						</div>
-						<div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+						{{-- <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
 								<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
 										<a href="#" class="flex flex-wrap no-underline hover:no-underline">
 												<p class="w-full text-gray-600 text-xs md:text-sm px-6">
@@ -387,7 +389,61 @@
 												</button>
 										</div>
 								</div>
+						</div> --}}
+
+						<div class="w-full md:w-1/3 p-6 flex flex-col">
+								<div class="flex-1 overflow-hidden bg-white mb-6 border shadow-lg rounded-lg">
+										<div class="py-4 px-4">
+												<div class="">
+														<a href="https://www.material-tailwind.com">
+																<img class="w-auto rounded-lg"
+																		src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+																		alt="tailwind-card-image" />
+														</a>
+												</div>
+												<div class="mt-5 mb-2">
+														<a href="#">
+																<h4 class="font-semibold text-gray-800">Material Design 3</h4>
+														</a>
+														<p class="mb-4 text-gray-500">
+																The time is now for it to be okay to be great. People in this
+																world shun people for being great. For being a bright color. For
+																standing out.
+														</p>
+														<a href="" class="text-white bg-blue-500 rounded-md py-2.5 px-4 hover:bg-blue-700">
+																Read More
+														</a>
+												</div>
+										</div>
+								</div>
 						</div>
+						{{-- <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+								<div class="flex-1 overflow-hidden bg-white mb-6 border shadow-lg rounded-lg">
+										<div class="py-4 px-4">
+												<div class="">
+														<a href="https://www.material-tailwind.com">
+																<img class="w-auto rounded-lg"
+																		src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+																		alt="tailwind-card-image" />
+														</a>
+												</div>
+												<div class="mt-5 mb-2">
+														<a href="#">
+																<h4 class="font-semibold text-gray-800">Material Design 3</h4>
+														</a>
+														<p class="mb-4 text-gray-500">
+																The time is now for it to be okay to be great. People in this
+																world shun people for being great. For being a bright color. For
+																standing out.
+														</p>
+														<a href="" class="text-white bg-blue-500 rounded-md py-2.5 px-4 hover:bg-blue-700">
+																Read More
+														</a>
+												</div>
+										</div>
+								</div>
+						</div> --}}
+
 				</div>
 		</section>
 		<section class="bg-gray-100 py-8">
