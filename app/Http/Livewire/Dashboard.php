@@ -41,7 +41,7 @@ class Dashboard extends Component
         // dd($this->file_name);
         $imageValidation = '';
         if($this->file_name != $this->old_file_name) {
-            $imageValidation = 'required|image|mimes:png,jpg,jpeg|max:value1024';
+            $imageValidation = 'required|image|mimes:png,jpg,jpeg|max:1024';
         }
         
         $this->validate([
