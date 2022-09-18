@@ -11,7 +11,7 @@ class Dashboard extends Component
 {
     use WithFileUploads;
     use WithPagination;
-    public $name, $kind, $food, $file_name, $old_file_name, $modal = false, $animal_id;
+    public $name, $kind, $food, $file_name, $old_file_name, $modal = false, $animal_id, $deleteConfirmation = false, $deleteId;
     
     public function render()
     {
@@ -35,6 +35,7 @@ class Dashboard extends Component
         $this->kind = '';
         $this->food = '';
         $this->file_name = null;
+        $this->deleteId = null;
     }
 
     public function store() {
@@ -81,5 +82,23 @@ class Dashboard extends Component
         $this->old_file_name = $animal->file_name;
         $this->animal_id = $id;
         $this->openModal();
+    }
+
+    public function openDeleteModal($id) {
+        $this->deleteId = $id;
+        $this->deleteConfirmation = true;
+        
+    }
+
+    public function closeDeleteModal() {
+        $this->deleteConfirmation = false;
+        $this->resetField();
+    }
+
+    public function delete($id) {
+        $animal = Animal::find($id);
+        $animal->delete();
+
+        $this->closeDeleteModal();
     }
 }
